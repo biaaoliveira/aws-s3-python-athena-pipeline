@@ -73,14 +73,3 @@ Veja `sql/analises_vendas.sql`. Os metadados ficam no banco `db_vendas` do Glue,
 ## Resultado do teste
 
 Um teste do Lambda foi concluído com sucesso, processando 100 registros e enviando o Parquet ao S3 PROCESSED. A execução automática por evento S3 também foi confirmada em logs.
-
-## Próximas melhorias
-
-- Processar a chave do objeto recebida no evento do S3 e gerar destinos únicos.
-- Automatizar a atualização das partições no catálogo.
-- Adicionar testes e tratamento de erros.
-- Incluir métricas de qualidade e custo.
-
-## Segurança
-
-Nunca inclua `.env`, chaves de acesso, tokens, credenciais de laboratório ou arquivos locais sensíveis no Git. Buckets e nomes de recursos nos scripts são exemplos da implementação e podem ser adaptados para outros ambientes.
